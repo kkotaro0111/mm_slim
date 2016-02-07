@@ -9,9 +9,17 @@ html
     title = current_page.data.title || "Middleman"
 
     link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'
+    - csses = [:site]
+    - if current_page.data.csses
+      - csses.concat( current_page.data.csses )
 
-    = stylesheet_link_tag :site
-    /= javascript_include_tag :all
+    = stylesheet_link_tag csses
 
   body class="#{page_classes}"
     = yield 
+    - jses = []
+    - if current_page.data.jses
+      - jses.concat( current_page.data.jses )
+
+    = javascript_include_tag jses
+
