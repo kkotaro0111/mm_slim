@@ -19,6 +19,7 @@ page '/*.txt', layout: false
 # General configuration
 
 set :relative_links, true
+activate :relative_assets
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
