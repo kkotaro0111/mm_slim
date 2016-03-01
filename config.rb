@@ -2,6 +2,11 @@
 # Page options, layouts, aliases and proxies
 ###
 
+
+# set :js_dir, 'js'
+# set :css_dir, 'css'
+# set :images_dir, 'out_images'
+
 # Per-page layout changes:
 #
 # With no layout
@@ -14,6 +19,13 @@ page '/*.txt', layout: false
 
 # Set slim-lang output style
 Slim::Engine.set_default_options :pretty => true
+
+# Compass options
+# # REF: https://gist.github.com/1246187
+compass_config do |config|
+  config.output_style = :nested
+  config.sass_options = { :line_comments => false }
+end
 
 
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
