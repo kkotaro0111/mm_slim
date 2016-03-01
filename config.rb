@@ -59,5 +59,5 @@ configure :build do
 
   # Minify Javascript on build
   # activate :minify_javascript
-  set :build_dir, '../build'
+  set :build_dir, './build'
 end
