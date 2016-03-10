@@ -19,9 +19,6 @@ html
     = yield 
     = partial 'layouts/footer'
 
-    - jses = []
-    - if current_page.data.jses
-      - jses.concat( current_page.data.jses )
-
+    - jses = ['application']
     = javascript_include_tag jses
 

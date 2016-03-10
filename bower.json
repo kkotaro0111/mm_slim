@@ -1,0 +1,21 @@
+{
+  "name": "mm_slim",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Kotaro Kawashima <utageyanagi+kkgithub@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/kkotaro0111/mm_slim",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1"
+  }
+}
