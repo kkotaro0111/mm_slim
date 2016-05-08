@@ -27,7 +27,11 @@ compass_config do |config|
   config.sass_options = { :line_comments => false }
 end
 
-
+activate :external_pipeline,
+         name: :webpack,
+         command: build? ? "npm run build":"npm run watch",
+         source: "./.tmp/"
+ignore '_js_dev/*'
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
 #  which_fake_page: "Rendering a fake page with a local variable" }

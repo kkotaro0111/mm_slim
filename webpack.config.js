@@ -7,6 +7,7 @@ module.exports = {
     path: __dirname,
     filename: "./source/javascripts/application.js"
   },
+  devtool: '#source-map',
   resolve: {
     root: [path.join(__dirname, "bower_components")]
   },
